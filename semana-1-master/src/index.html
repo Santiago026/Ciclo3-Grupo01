@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
     <title> Mi Tienda Cercana </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
     <!--Tipos de letra desde google fonts-->
     <!--Poppins-->
@@ -35,44 +37,97 @@
 
 </head>
 
-<header>
-    </nav>
-    <div class="nav-bg">
-        <div class="logo">
-            <img src="img/logo-TTC-01.svg" alt="insertar SVG con la etiqueta image">
-        </div>
+<body style="height: 2000px;">
 
-        <div>
-            <form class="buscador">
-                <input class="form-control me-2" type="search" placeholder="buscar" aria-label="Buscar">
-                <button class="boton-success" type="submit">Buscar</button>
-            </form>
-        </div>
+    <header id="header" class="d-flex justify-content-md-center">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #2f7a2c">
+            <div class="container-fluid" id="navbar-container">
+                <a class="navbar-brand" href="#">
+                    <img class="d-inline-block align-top" src="/semana-1-master/src/img/logo-TTC-01.svg" width="200">
+                </a>
 
-        <nav class="navegacion-principal contenedor">
-            <a href="#">INICIO</a>
-            <a href="#">PRODUCTOS</a>
-            <a href="#">TIENDAS</a>
-            <a href="#">BLOG</a>
-            <a href="#">CONTACTO</a>
+                <form action="" class="d-flex">
+                    <input type="text" class="form-control me-4">
+                    <button type="submit" class="btn-ligth">Search</button>
+                </form>
+
+                <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="navbar-collapse" id="navbarNav">
+                    <ul class="navbar nav">
+                        <li class="nav-item">
+                            <a href="#">INICIO</a>
+                        </li>
+
+                        <li class="nav-item active dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                PRODUCTOS
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a href="#" class="dropdown-item">FRUTAS</a>
+                                </li>
+                                <li><a href="#" class="dropdown-item">VERDURAS</a>
+                                </li>
+                                <li><a href="#" class="dropdown-item">CARNICOS</a>
+                                </li>
+
+
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#">TIENDAS</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#">CONTACTO</a>
+                        </li>
+
+
+
+
+                    </ul>
+                </div>
+            </div>
         </nav>
 
-    </div>
 
-    <section class="imagen-header">
-        <div class="contenido-imagen-header">
-            <!--
-            <img src="logo TTC-02.svg" alt="insertar SVG con la etiqueta image" width="1027"  >-->
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="/semana-1-master/src/img/imagen-header.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="/semana-1-master/src/img/imagen-header-2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="/semana-1-master/src/img/imagen-header-3.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-    </section>
-</header>
+    </header>
 
-<body>
-    <header></header>
     <section id="services"></section>
     <section id="news"></section>
     <section id="team"></section>
     <footer></footer>
 </body>
+var myCarousel = document.querySelector('#myCarousel')
+var carousel = new bootstrap.Carousel(myCarousel)
 
 </html>
