@@ -1,6 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+:root{
+    --green:#267c31;
+    --backgroud:#faf7ef;
+    --yellow:#f4a94d;
+    --letter:#eceeec; 
+}
+*{
+    background: var(--backgroud);
+    font-family: 'Poppins', sans-serif;
 
-
+}
 #team{
     width: 100%;
     min-width: 320px;
@@ -20,7 +29,7 @@
     border-radius: 40px;
     box-shadow: 1px 6px 21px -1px #000000;
     position: relative;
-    background-image: linear-gradient( 135deg, #81FBB8 10%, #28C76F 100%);
+    background: var(--green);
 }
 #team .container .card  img{
     width: 100px;
@@ -29,28 +38,39 @@
     display: flex;
     justify-self: center;
     align-self: center;
+    background-color: var(--green);
 }
 #team .container .card p{
     margin-left: 30px;
-    font-family: 'Ubuntu', sans-serif;
-    color: #ffffff;
+    color: var(--letter);
+    background: var(--green);
+
 }
 .card a{
     justify-self: center;
     align-self: center;
 }
+.card .ultima{
+    margin-bottom: 30px;
+}
 .card p{
     margin-top: 20px;
+    color: var(--letter);
     font-weight: 600;
     font-size: 20px;
+    background: var(--green);
+
+}
+.card p strong{
+    background: var(--green);
+    color: var(--letter);
+
 }
 .card a button{
     text-decoration: none;
-    padding: 10px;
-    font-weight: 600;
     font-size: 20px;
-    color: #ffffff;
-    background-color: #0b7e3f;
+    color: var(--letter);
+    background: var(--yellow);
     border-radius: 30px;
     width: 200px;
     height: 40px;
