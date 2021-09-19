@@ -1,0 +1,11 @@
+:root {
+    --hueso: #FAF7EE;
+    --verde: #2f7a2c;
+    --amarillo: #ffab49;
+    --gris-oscuro: #444444;
+}
+body {
+    font-family: "poppins", sans-serif;
+    font-size: 1rem;
+    padding-top: 20;
+    }
