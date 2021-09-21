@@ -32,7 +32,12 @@ body {
 }
 
 .nav-item a{
+<<<<<<< HEAD
     color: var(--amarillo);
+=======
+    font-family:"Poppins", sans-serif;
+    color: var(--hueso);
+>>>>>>> 0c0cf0987187b1ca71e17f31fe5f630f8a24f393
     text-decoration: none;
     font-weight: 700;
     font-size: 1.5rem;
